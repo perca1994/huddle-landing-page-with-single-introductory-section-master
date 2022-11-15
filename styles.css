@@ -127,7 +127,8 @@ footer{
      margin-left: 50px;
     }
     footer{
-     margin-left: 1150px;
+        display: inline-block;
+     margin-left: 1100px;
      margin-top: 80px;
      margin-bottom: 0px
 
