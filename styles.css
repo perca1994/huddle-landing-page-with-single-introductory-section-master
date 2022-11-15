@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root{
+    --color-violet:hsl(247 40% 49%);
+    --color-Smagneta:hsl(300 69% 71%);
+    --font-heading:'Poppins', sans-serif;
+    --font-body:'Open Sans', sans-serif;
+}
+
+body{
+    width: 375px;
+    height: 100vh;
+    background-color: var(--color-violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--font-body);
+    text-align: center;
+    color: white;
+
+}
+
+#logo{
+    height: 42px;
+    float: left;
+    margin-right:140px;
+    margin-top: 40px;
+   
+}
+#ilustration{
+width: 104%;
+margin-top: 80px;
+margin-left: 50px
+}
+h1{
+    width: 100%;
+    font-family: var(--font-heading);
+    margin-left: 50px;
+    margin-top: 70px;
+
+}
+p{
+    width: 80%;
+    margin-left: 70px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+a{
+    font-size: 14px;
+    margin-top: 80px;
+    color: var(--color-violet);
+    background-color: white;
+    padding: 0.7rem 6rem;
+    border-radius: 35px;
+    margin-left: 70px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+    text-decoration: none;
+}
+a:hover{
+    background-color: var(--color-Smagneta);
+    cursor: pointer;
+    color: white;
+}
+footer{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.fa-brands{
+    margin:0 auto;
+    margin-bottom: 40px;
+    border:1px solid white;
+    padding: 8px;
+    border-radius:50%;
+    margin-left: 10px;
+}
+.fa-facebook-f{
+    margin-left:70px;
+    padding: 8px 10px;
+}
+.fa-brands:hover{
+    color: var(--color-Smagneta);
+    cursor: pointer;
+    border-color: var(--color-Smagneta);
+}
+@media all and (min-width: 699px){
+    body{
+        width: 100%;
+
+        background-image: url(images/bg-desktop.svg);
+        background-size:100%;
+    }
+    #logo{
+        width: 205px;
+        margin-right: 1100px;
+    }
+    #ilustration{
+        width:90%;
+        margin-left: 35px;
+        
+    }
+    main{
+        display:flex ;
+        flex-direction:row;
+        align-items: center;
+        justify-items: center;
+    
+    }
+    section{
+        text-align: start;
+        margin-top:-150px;
+    }
+    h1{
+        width: 400px;
+        line-height: 50px;
+    }
+    p{
+        width: 470px;
+        margin-left: 50px;
+        margin-bottom: 35px;
+    }
+    a{
+     padding: 0.7rem 3rem; 
+     margin-left: 50px;
+    }
+    footer{
+     margin-left: 1150px;
+     margin-top: 80px;
+     margin-bottom: 0px
+
+    }
+}
